@@ -1,0 +1,18 @@
+# Environment 1: fingerprint models (Random Forest, XGBoost),
+# data preparation, and the figure and table scripts.
+#
+#   conda create -n antimalarial python=3.11 -y
+#   conda activate antimalarial
+#   pip install -r requirements.txt
+#
+# ChemProp and GNEprop need their own environments - see the README.
+
+numpy
+pandas
+scipy
+matplotlib
+tabulate
+scikit-learn==1.6.1
+xgboost==3.2.0
+rdkit==2023.03.2
+optuna==4.8.0
