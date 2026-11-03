@@ -1,0 +1,105 @@
+{
+  "model": "XGBoost",
+  "selection": "nested Bayesian (Optuna TPE), 50 trials/fold, 3-fold stratified inner CV on scaffold-cluster splits",
+  "refit": "train + validation partition",
+  "framework": "xgboost 3.2.0",
+  "random_seed": 42,
+  "per_fold_best_params": {
+    "0": {
+      "n_estimators": 300,
+      "max_depth": 10,
+      "min_child_weight": 1,
+      "gamma": 0.5803020941521484,
+      "learning_rate": 0.1754132002635028,
+      "subsample": 0.9681771760327126,
+      "colsample_bytree": 0.5304969912927823,
+      "reg_alpha": 2.23831308181231,
+      "reg_lambda": 7.685904591987274,
+      "scale_pos_weight": 8.53730372834368
+    },
+    "1": {
+      "n_estimators": 1500,
+      "max_depth": 10,
+      "min_child_weight": 4,
+      "gamma": 0.026003878881310366,
+      "learning_rate": 0.016463032821340796,
+      "subsample": 0.9440546715547629,
+      "colsample_bytree": 0.8617582887171868,
+      "reg_alpha": 4.13097647748292,
+      "reg_lambda": 0.9595773157704441,
+      "scale_pos_weight": 1.565742214541853
+    },
+    "2": {
+      "n_estimators": 1200,
+      "max_depth": 10,
+      "min_child_weight": 1,
+      "gamma": 1.1878924276234384,
+      "learning_rate": 0.03956323708097959,
+      "subsample": 0.7732336952588101,
+      "colsample_bytree": 0.6424127407644168,
+      "reg_alpha": 2.4546579554048025,
+      "reg_lambda": 8.663606517083371,
+      "scale_pos_weight": 6.794105564715637
+    },
+    "3": {
+      "n_estimators": 1000,
+      "max_depth": 9,
+      "min_child_weight": 1,
+      "gamma": 1.416965476115234,
+      "learning_rate": 0.05523161759513423,
+      "subsample": 0.8318550704523019,
+      "colsample_bytree": 0.8126394816779671,
+      "reg_alpha": 2.6057891318756132,
+      "reg_lambda": 6.267771839122837,
+      "scale_pos_weight": 7.814392060837343
+    },
+    "4": {
+      "n_estimators": 1200,
+      "max_depth": 10,
+      "min_child_weight": 1,
+      "gamma": 1.6542836028293673,
+      "learning_rate": 0.0800089070132028,
+      "subsample": 0.7566747956144263,
+      "colsample_bytree": 0.8985370490684872,
+      "reg_alpha": 1.3420251630854265,
+      "reg_lambda": 0.8430365259427928,
+      "scale_pos_weight": 5.810135914544829
+    },
+    "5": {
+      "n_estimators": 800,
+      "max_depth": 9,
+      "min_child_weight": 2,
+      "gamma": 1.1529810062217873,
+      "learning_rate": 0.08258890855242274,
+      "subsample": 0.9539836120613734,
+      "colsample_bytree": 0.71767249662176,
+      "reg_alpha": 1.6366830771354688,
+      "reg_lambda": 4.629539687775036,
+      "scale_pos_weight": 6.42347560176053
+    },
+    "6": {
+      "n_estimators": 1400,
+      "max_depth": 10,
+      "min_child_weight": 2,
+      "gamma": 0.35320244740603257,
+      "learning_rate": 0.03558338278541782,
+      "subsample": 0.8260428766211666,
+      "colsample_bytree": 0.7141915437255594,
+      "reg_alpha": 1.4067094115731447,
+      "reg_lambda": 7.303684652370215,
+      "scale_pos_weight": 1.9822657478136876
+    },
+    "7": {
+      "n_estimators": 1000,
+      "max_depth": 10,
+      "min_child_weight": 1,
+      "gamma": 0.41278051521222886,
+      "learning_rate": 0.06468833973047662,
+      "subsample": 0.7634078234980264,
+      "colsample_bytree": 0.6730912491272686,
+      "reg_alpha": 0.43849067780442474,
+      "reg_lambda": 7.114256255694779,
+      "scale_pos_weight": 6.594521966366598
+    }
+  }
+}

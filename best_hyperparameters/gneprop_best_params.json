@@ -1,0 +1,23 @@
+{
+  "model": "GNEprop (GIN)",
+  "selection": "leakage-free: selected by fold-0 VALIDATION AUPRC (trial 23) from an 11-hyperparameter Optuna search; one configuration applied to all folds",
+  "best_by_val_trial": 23,
+  "best_val_ap": 0.5752666592597961,
+  "pretraining": "none - trained from scratch to isolate the architecture",
+  "deployment": "3-model ensemble (reported) and best single model",
+  "framework": "PyTorch 2.2.1 / PyG 2.4.0",
+  "random_seed": 42,
+  "params": {
+    "lr": 3.016411663918971e-05,
+    "hidden_size": 750,
+    "depth": 4,
+    "num_readout_layers": 1,
+    "dropout": 0.1,
+    "aggr": "sum",
+    "max_epochs": 50,
+    "train_batch_size": 100,
+    "weight_decay": 0.0001,
+    "adv_m": 5,
+    "ig_baseline_ratio": 0.0
+  }
+}

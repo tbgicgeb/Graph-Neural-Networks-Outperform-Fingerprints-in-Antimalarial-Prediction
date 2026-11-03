@@ -1,0 +1,65 @@
+{
+  "model": "Random Forest",
+  "selection": "nested Bayesian (Optuna TPE), 50 trials/fold, 3-fold stratified inner CV on scaffold-cluster splits",
+  "refit": "train + validation partition",
+  "framework": "scikit-learn 1.6.1",
+  "random_seed": 42,
+  "per_fold_best_params": {
+    "0": {
+      "n_estimators": 1400,
+      "max_depth": 50,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt",
+      "class_weight": "balanced"
+    },
+    "1": {
+      "n_estimators": 1300,
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "max_features": "log2",
+      "class_weight": "balanced_subsample"
+    },
+    "2": {
+      "n_estimators": 1000,
+      "max_depth": 50,
+      "min_samples_leaf": 2,
+      "max_features": 0.2,
+      "class_weight": "balanced_subsample"
+    },
+    "3": {
+      "n_estimators": 1400,
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt",
+      "class_weight": "balanced"
+    },
+    "4": {
+      "n_estimators": 1400,
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "max_features": "log2",
+      "class_weight": "balanced_subsample"
+    },
+    "5": {
+      "n_estimators": 900,
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt",
+      "class_weight": "balanced_subsample"
+    },
+    "6": {
+      "n_estimators": 700,
+      "max_depth": null,
+      "min_samples_leaf": 2,
+      "max_features": 0.1,
+      "class_weight": "balanced"
+    },
+    "7": {
+      "n_estimators": 1400,
+      "max_depth": 50,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt",
+      "class_weight": "balanced"
+    }
+  }
+}
